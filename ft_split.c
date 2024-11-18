@@ -51,8 +51,8 @@ char	**ft_split(char const *s, char c)
 	words = count_words(s, c);
 	i = 0;
 	phrase = (char **)malloc(sizeof(char *) * (words + 1));
-  if (!phrase)
-    return 0;
+	if (!phrase)
+		return (0);
 	while (words-- > 0)
 	{
 		k = 0;
@@ -68,20 +68,20 @@ char	**ft_split(char const *s, char c)
 	return (phrase);
 }
 
-int	main(void)
-{
-	int		i;
-	char	*str;
-	int		count;
-	char	**string;
+// int	main(void)
+// {
+// 	int		i;
+// 	char	*str;
+// 	int		count;
+// 	char	**string;
 
-	i = 0;
-	str = "++ciao,++uno,+due+tre+++";
-	count = count_words((const char *)str, '+');
-	string = ft_split(str, '+');
-	while (i < count)
-	{
-		printf("%s\n", string[i]);
-		i++;
-	}
-}
+// 	i = 0;
+// 	str = "++ciao,++uno,+due+tre+++";
+// 	count = count_words((const char *)str, '+');
+// 	string = ft_split(str, '+');
+// 	while (i < count)
+// 	{
+// 		printf("%s\n", string[i]);
+// 		i++;
+// 	}
+// }
