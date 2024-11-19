@@ -8,7 +8,7 @@ void	ft_putstr_fd(char *s, int fd)
 		write(fd, &(*s++), 1);
 }
 
-int	main(void)
-{
-	ft_putstr_fd("ciao", 1);
-}
+// int	main(void)
+// {
+// 	ft_putstr_fd("ciao", 1);
+// }
